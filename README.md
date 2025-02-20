@@ -34,7 +34,7 @@ set var x = 10         change value of x to 10 during runtime
 ```
 *note: s, n and c can be replaced with step, next and continue*
 
-### 5.  Stopping program
+### 5.  Stop the program
 ```
 q        exit program
 kill     kill and restart running program (type r to restart it)
