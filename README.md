@@ -1,8 +1,10 @@
 # GDB-Guide
 
-## Compile program with -g
+## Steps
 
 ### 1.  Launch debugging
+Compile program with -g
+
 gdb ./name_of_executable                        Launches without arguments
 gdb --args ./name_of_executable [arguments]     Launches with arguments
 
