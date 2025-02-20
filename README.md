@@ -5,7 +5,7 @@
 ### 1.  Launch debugging
 Compile program with -g
 
-gdb ./name_of_executable                        Launches without arguments
+|gdb ./name_of_executable|Launches without arguments|
 gdb --args ./name_of_executable [arguments]     Launches with arguments
 
 ### 2.  add a breakpoint
