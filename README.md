@@ -45,11 +45,11 @@ kill     kill and restart running program (type r to restart it)
 
 ### Display variables
 ```
-p [name of varible]         print value of a variable
+p [name of variable]        print value of a variable
 ptype [variable name]       show expression's type
 display [variable name]     automatically show the value of the variable when execution stops
 display                     show a list of all enabled expressions
-undisplay [list number]     choose an variable to remove from the list by its number
+undisplay [list number]     choose a variable to remove from the list by its number
 ```
 *note: p can be replaced with print*
 
