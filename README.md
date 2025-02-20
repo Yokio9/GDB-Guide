@@ -5,7 +5,7 @@
 ### 1.  Launch
 !!! Remember to compile program with -g
 ```
-gdb ./name_of_executable					Launch without arguments
+gdb ./name_of_executable		                Launch without arguments
 gdb --args ./name_of_executable [arguments]	Launch with arguments
 ```
 ### 2.  Add a breakpoint
