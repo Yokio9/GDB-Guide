@@ -18,7 +18,7 @@ b file.c:5          set breakpoint in file.c at line 5
 ### 3.  Execute
 ```
 r                         start program with current args list
-r [argument list]         start program with arguments if args not previously given
+r [argument list]         start program with arguments if args not previously specified
 r ... <infile >outfile    start your program with input, output redirected
 ```
 *note: r can be replaced with run*
