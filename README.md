@@ -17,16 +17,16 @@ b file.c:5					set breakpoint in file.c at line 5
 
 ### 3.  Execute
 ```
-r												start program with current args list
-r [argument list]				start program with arguments if args not previously given
-r ... <infile >outfile	start your program with input, output redirected
+r												# start program with current args list
+r [argument list]				# start program with arguments if args not previously given
+r ... <infile >outfile	# start your program with input, output redirected
 ```
 ### 4.	Execution control
 ```
-s					go to next line and step into function calls
-n					go to next line and step over function calls
-c					continue program (will stop at next breakpoint)
-finish		continue execution until the function returns to its caller
+s					# go to next line and step into function calls
+n					# go to next line and step over function calls
+c					# continue program (will stop at next breakpoint)
+finish		# continue execution until the function returns to its caller
 ```
 ### 5.  Stopping program
 ```
