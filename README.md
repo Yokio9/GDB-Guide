@@ -34,9 +34,16 @@ finish      continue execution until the function returns to its caller
 
 ### 5.  Stopping program
 ```
+q           exit program
 kill        kill and restart running program (type r to restart it)
 ```
+*note: q can be replaced with quit*
 
+## Steps
+```
+show args                display argument list
+set args [arglist]       specify arglist for next run
+```
 ### Breakpoint management
 ```
 info break                  show defined breakpoints
