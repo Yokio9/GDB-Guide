@@ -35,9 +35,11 @@ kill										kill and restart running program (type r to restart it)
 
 ### Display variables
 ```
-p [name of varible]							show defined breakpoints
+p [name of varible]						  	show defined breakpoints
 ptype [expression name]						show expression's type
 display [expression name]					automatically show the value of the expression when execution stops
+display                           show a list of all enabled expressions
+undisplay [list number]           choose an expression to remove from the list by its number
 ```
 
 ### Breakpoint management
