@@ -25,10 +25,12 @@ r ... <infile >outfile    start your program with input, output redirected
 
 ### 4.	Execution control
 ```
-s           go to next line and step into function calls
-n           go to next line and step over function calls
-c           continue program (will stop at next breakpoint)
-finish      continue execution until the function returns to its caller
+s                      go to next line and step into function calls
+n                      go to next line and step over function calls
+c                      continue program (will stop at next breakpoint)
+finish                 continue execution until the function returns to its caller
+until [line number]    run until the specified line
+set var x = 10         change value of x to 10 during runtime
 ```
 *note: s, n and c can be replaced with step, next and continue*
 
@@ -40,23 +42,40 @@ kill        kill and restart running program (type r to restart it)
 *note: q can be replaced with quit*
 
 ## Useful to know
+
+### Display variables
 ```
-show args                display argument list
+p [name of varible]           print value of a variable
+ptype [variable name]         show expression's type
+display [variable name]       automatically show the value of the variable when execution stops
+display                       show a list of all enabled expressions
+undisplay [list number]       choose an variable to remove from the list by its number
+```
+*note: p can be replaced with print*
+
+### Arguments management
+```
+show args                display the current argument list for the program
 set args [arglist]       specify arglist for next run
 ```
 ### Breakpoint management
 ```
-info break                  show defined breakpoints
+info break                  show all defined breakpoints
 clear function_name         delete breakpoint at the start of function
 clear file.c:5              delete breakpoint in file.c at line 5
 ```
+## Program crash cheat code
+```
+bt      print the function calls leading to the crash
+```
+If code crashes run bt. It will print something like this:
+#0  third_function () at test_bt.c:6
+#1  second_function () at test_bt.c:10
+#2  first_function () at test_bt.c:14
+#3  main () at test_bt.c:18
 
-### Display variables
-```
-p [name of varible]           show defined breakpoints
-ptype [expression name]       show expression's type
-display [expression name]     automatically show the value of the expression when execution stops
-display                       show a list of all enabled expressions
-undisplay [list number]       choose an expression to remove from the list by its number
-```
-*note: p can be replaced with print*
+Each line shows:
+
+    Function name (third_function, second_function, etc.)
+    Source file and line number (test_bt.c:6 means it crashed at line 6)
+    The order of function calls before the crash.
