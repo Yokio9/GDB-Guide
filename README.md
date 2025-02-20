@@ -36,8 +36,8 @@ set var x = 10         change value of x to 10 during runtime
 
 ### 5.  Stopping program
 ```
-q           exit program
-kill        kill and restart running program (type r to restart it)
+q        exit program
+kill     kill and restart running program (type r to restart it)
 ```
 *note: q can be replaced with quit*
 
@@ -45,28 +45,28 @@ kill        kill and restart running program (type r to restart it)
 
 ### Display variables
 ```
-p [name of varible]           print value of a variable
-ptype [variable name]         show expression's type
-display [variable name]       automatically show the value of the variable when execution stops
-display                       show a list of all enabled expressions
-undisplay [list number]       choose an variable to remove from the list by its number
+p [name of varible]         print value of a variable
+ptype [variable name]       show expression's type
+display [variable name]     automatically show the value of the variable when execution stops
+display                     show a list of all enabled expressions
+undisplay [list number]     choose an variable to remove from the list by its number
 ```
 *note: p can be replaced with print*
 
 ### Arguments management
 ```
-show args                display the current argument list for the program
-set args [arglist]       specify arglist for next run
+show args              display the current argument list for the program
+set args [arglist]     specify arglist for next run
 ```
 ### Breakpoint management
 ```
-info break                  show all defined breakpoints
-clear function_name         delete breakpoint at the start of function
-clear file.c:5              delete breakpoint in file.c at line 5
+info break              show all defined breakpoints
+clear function_name     delete breakpoint at the start of function
+clear file.c:5          delete breakpoint in file.c at line 5
 ```
 ## Program crash cheat code 🤯💥
 ```
-bt      print the function calls leading to the crash
+bt     print the function calls leading to the crash
 ```
 If code crashes run bt. It will print something like this:
 
