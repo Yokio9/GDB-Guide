@@ -69,13 +69,13 @@ clear file.c:5              delete breakpoint in file.c at line 5
 bt      print the function calls leading to the crash
 ```
 If code crashes run bt. It will print something like this:
-  #0  third_function () at test_bt.c:6
-  #1  second_function () at test_bt.c:10
-  #2  first_function () at test_bt.c:14
-  #3  main () at test_bt.c:18
 
+    #0  third_function () at test_bt.c:6
+    #1  second_function () at test_bt.c:10
+    #2  first_function () at test_bt.c:14
+    #3  main () at test_bt.c:18
 Each line shows:
 
-Function name (third_function, second_function, etc.)
-Source file and line number (test_bt.c:6 means it crashed at line 6)
-The order of function calls before the crash.
+    Function name (third_function, second_function, etc.)
+    Source file and line number (test_bt.c:6 means it crashed at line 6)
+    The order of function calls before the crash.
