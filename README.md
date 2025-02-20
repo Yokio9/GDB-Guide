@@ -39,7 +39,7 @@ kill        kill and restart running program (type r to restart it)
 ```
 *note: q can be replaced with quit*
 
-## Steps
+## Useful to know
 ```
 show args                display argument list
 set args [arglist]       specify arglist for next run
