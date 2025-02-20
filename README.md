@@ -21,6 +21,8 @@ r                         start program with current args list
 r [argument list]         start program with arguments if args not previously given
 r ... <infile >outfile    start your program with input, output redirected
 ```
+*note: r can be replaced with run*
+
 ### 4.	Execution control
 ```
 s           go to next line and step into function calls
@@ -28,9 +30,18 @@ n           go to next line and step over function calls
 c           continue program (will stop at next breakpoint)
 finish      continue execution until the function returns to its caller
 ```
+*note: s, n and c can be replaced with step, next and continue*
+
 ### 5.  Stopping program
 ```
 kill        kill and restart running program (type r to restart it)
+```
+
+### Breakpoint management
+```
+info break                  show defined breakpoints
+clear function_name         delete breakpoint at the start of function
+clear file.c:5              delete breakpoint in file.c at line 5
 ```
 
 ### Display variables
@@ -41,10 +52,4 @@ display [expression name]     automatically show the value of the expression whe
 display                       show a list of all enabled expressions
 undisplay [list number]       choose an expression to remove from the list by its number
 ```
-
-### Breakpoint management
-```
-info break                  show defined breakpoints
-clear function_name         delete breakpoint at the start of function
-clear file.c:5              delete breakpoint in file.c at line 5
-```
+*note: p can be replaced with print*
