@@ -64,7 +64,7 @@ info break                  show all defined breakpoints
 clear function_name         delete breakpoint at the start of function
 clear file.c:5              delete breakpoint in file.c at line 5
 ```
-## Program crash cheat code
+## Program crash cheat code 🤯💥
 ```
 bt      print the function calls leading to the crash
 ```
